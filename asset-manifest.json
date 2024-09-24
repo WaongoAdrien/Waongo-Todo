@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Waongo-Todo/static/css/main.d6d1bee1.css",
+    "main.js": "/Waongo-Todo/static/js/main.03cc54ca.js",
+    "static/js/453.ffce438c.chunk.js": "/Waongo-Todo/static/js/453.ffce438c.chunk.js",
+    "static/media/logo.svg": "/Waongo-Todo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Waongo-Todo/index.html",
+    "main.d6d1bee1.css.map": "/Waongo-Todo/static/css/main.d6d1bee1.css.map",
+    "main.03cc54ca.js.map": "/Waongo-Todo/static/js/main.03cc54ca.js.map",
+    "453.ffce438c.chunk.js.map": "/Waongo-Todo/static/js/453.ffce438c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6d1bee1.css",
+    "static/js/main.03cc54ca.js"
+  ]
+}
