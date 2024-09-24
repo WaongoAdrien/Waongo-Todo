@@ -1,25 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+//import TodoList from './pages/TodoLists';
+import TodoList from './pages/TodoList';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage'; 
+import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <nav>
+        <ul className="nav-links">
+          <li>
+            <Link to="/">RESET APP</Link>
+          </li>
+          <li>
+            <Link to="/application">BEGIN ADDING TASKS</Link> 
+          </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" index element={<HomePage />} /> 
+        <Route path="/application" element={<TodoList />} /> 
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

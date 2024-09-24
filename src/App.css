@@ -1,38 +1,77 @@
-.App {
+/* Style for the main container */
+div {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  color:white;
+  margin: auto;
+  padding: 1em;
+  padding-top: 25PX;
+  background-color: #666c98;
+  border-radius: 8px;
+  margin-top: 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Style for the task list */
+ul {
+  justify-content: center; 
+  color:#070a21;
+  width: auto;
+  height: 2em;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly; 
+  padding: 60px;
+  margin: 5px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  vertical-align: middle ;
+  font-size: large;
+}
+
+li{
+  margin-top: 5px;
+}
+/* Style for the buttons */
+.button-space {
+  margin-left: 100px;
+}
+
+/* Style for the form input */
+input[type="text"] {
+  width: calc(103% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links {
+  list-style: none; 
+  display: flex;    
+  gap: 40px;        
+  padding: 0;       
+  margin: 0;        
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links a {
+  text-decoration: none; 
+  color: black;          
+  font-weight: bold;     
+}
+
+.nav-links a:hover {
+  color: blue;
 }
